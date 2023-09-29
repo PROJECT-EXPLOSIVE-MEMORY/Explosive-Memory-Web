@@ -10,7 +10,7 @@ html {
 
 .grid-container{
     display: grid; 
-    grid-template:
+    grid-template-areas:
     "header"
     "main"
     "footer";
@@ -18,7 +18,7 @@ html {
     grid-template-rows: 5rem 1fr 5rem;
     height: 100%;
 }
-
+/*step 10*/
 .header { 
     grid-area: header; 
     background-color: #203040; 
@@ -43,9 +43,11 @@ html {
     color: #ff8000; 
 }
 
+/* Step 11 */
 .main {
 	grid-area: main;
 }
+
 .footer {
 	grid-area: footer;
 	background-color: #203040;
@@ -60,6 +62,8 @@ a {
 a:hover {
 	color: #ff8000;
 }
+
+/* Part 2 step 4 */
 
 .brand button { 
 	font-size: 3rem; 
@@ -94,27 +98,27 @@ a:hover {
 	top: 1.5rem; 
 } 
 
-.product {
+/* Product Screen */
+.products {
     display:flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
- 
- 
+
 .products li { 
 list-style-type: none; 
 padding: 0; 
 flex: 0 1 34rem; 
 margin: 1rem; 
 height: 50rem; 
-border—bottom: 0.1rem #c0c0c0 solid; 
+border-bottom: 0.1rem #c0c0c0 solid; 
 }
  
 .product { 
 display: flex; 
-flex—direction: column; 
-justify—content: space-between; 
+flex-direction: column; 
+justify-content: space-between; 
 height: 100%; 
 }
  
@@ -136,6 +140,7 @@ font-weight: bold;
 max-width: 34rem; 
 max-height: 34rem; 
 }
+
 .product-rating { 
 margin-bottom: 1rem;
 }
