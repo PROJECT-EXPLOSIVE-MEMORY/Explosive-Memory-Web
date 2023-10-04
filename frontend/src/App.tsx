@@ -9,21 +9,19 @@ function App() {
   }
   
   const closeMenu = () => { 
-    document.querySelector(".sidebar")?.classList.add("open"); 
+    document.querySelector(".sidebar")?.classList.remove("open"); 
   }
 
   return (
     <div className= "grid=container" >
         <header className="header">
-          <div className="brand">
-
-                        <button onClick={openMenu}>&#9776;</button>
-          </div>
-          <a href="index.html">Explosive Memory</a>
-
+            <div className="brand">
+                    <button onClick={openMenu}>&#9776;</button>
+                    <a href="index.html">Explosive Memory</a>
+            </div>
             <div className="header-links">
-                    <a href="cart.html">Cart</a>
-                    <a href="signin.html">Sign In</a>
+                        <a href="cart.html">Cart</a>
+                        <a href="signin.html">Sign In</a>
             </div>
         </header>
 
@@ -47,7 +45,7 @@ function App() {
                 <ul className="products"> 
                     <li> 
                         <div className="product"> 
-                            <img className="product-image" src="images/d1.jpg" alt="product" />
+                            <img className="product-image" src="d1.jpg" alt="product" />
                             <div className="product-name">
                                 <a href="product.html">Slim Shirt</a>
                             </div> 
@@ -58,7 +56,7 @@ function App() {
 	                </li>
                     <li> 
                         <div className="product"> 
-                            <img className="product-image" src="images/d1.jpg" alt="product" />
+                            <img className="product-image" src="d1.jpg" alt="product" />
                             <div className="product-name">
                                 <a href="product.html">Slim Shirt</a>
                             </div> 
@@ -69,7 +67,7 @@ function App() {
 	                </li>
                     <li> 
                         <div className="product"> 
-                            <img className="product-image" src="images/d1.jpg" alt="product" />
+                            <img className="product-image" src="d1.jpg" alt="product" />
                             <div className="product-name">
                                 <a href="product.html">Slim Shirt</a>
                             </div> 
