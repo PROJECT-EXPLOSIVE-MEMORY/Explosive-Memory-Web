@@ -7,6 +7,7 @@ import Products from "./Products/Products";
 import Orders from "./Orders/Orders";
 import OrderDetail from "./Orders/OrderDetail";
 import Payment from "./Payment/Payment";
+import Fulfillment from "./Fulfillment/Fulfillment";
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
                             <Link to="/catalog">Catalog</Link>
                             <Link to="/Orders">Order</Link>
                             <Link to="/Payment">Payment</Link>
+                            <Link to="/Fulfillment">Fulfillment</Link>
                         </div>
                     </header>
 
@@ -63,6 +65,7 @@ function App() {
                         <Route path="/orders" element={<Orders />}></Route>
                         <Route path="/order/:id" element={<OrderDetail />}></Route>
                         <Route path="/Payment" element={<Payment />}></Route>
+                        <Route path="/Fulfillment" element={<Fulfillment />}></Route>
                     </Routes>
                 </main>
         <footer className="footer">
