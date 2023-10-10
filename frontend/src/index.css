@@ -166,6 +166,9 @@ th {
 tbody > tr:nth-child(odd) {
   background-color: #f0f0f0;
 }
+tbody > tr.active {
+  background-color: #cc2626;
+}
 
 /*Check out*/
 .checkout-steps {
@@ -211,4 +214,7 @@ input {
   border: 0.1rem #c0c0c0 solid;
   border-radius: 0.5rem;
 }
+
+/*Red*/
+
 
