@@ -31,7 +31,7 @@ function App() {
                     <header className="header">
                         <div className="brand">
                                 <button onClick={openMenu}>&#9776;</button>
-                                <a href="index.html">Explosive Memory</a>
+                                <Link to="/">Explosive Memory</Link>
                         </div>
                         <div className="header-links">
                             <Link to="/">Home</Link>
@@ -48,11 +48,11 @@ function App() {
                         <button className="sidebar-close-button" onClick={closeMenu}>x</button>
                         <ul>
                             <li>
-                                <a href="index.html">Pants</a>
+                            <Link to="/">Pants</Link>
                             </li>
 
                             <li>
-                                <a href="index.html">Shirts</a>
+                            <Link to="/">Shirt</Link>
                             </li>
                         </ul>
                     </aside>
