@@ -23,7 +23,7 @@ function App() {
     <Router>
     <div className= "grid=container" >
             <link rel="stylesheet" href="style.css" />
-            <title>Emerald Tiger</title>
+            <title>Explosive Memory</title>
            
             <body>
                 <div>
@@ -36,7 +36,7 @@ function App() {
                         <div className="header-links">
                             <Link to="/">Home</Link>
                             <Link to="/catalog">Catalog</Link>
-                            <Link to="/Orders">Order</Link>
+                            <Link to="/Orders">Orders</Link>
                             <Link to="/Payment">Payment</Link>
                             <Link to="/Fulfillment">Fulfillment</Link>
                         </div>
