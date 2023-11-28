@@ -19,16 +19,16 @@ function Products() {
     = useState(emptyProducts);
 
     useEffect(()=> {
-        axios.get<Product[]>("http:localhost:5224/catalog",
+        axios.get<Product[]>("http://localhost:5224/catalog",
         {
             headers: {
-                "Content-Type":"application/json"
+                "Content-Type":"application/json",
             },
         })
         .then((response) => setProducts(response.data))
-        .catch((error) => console.error(error));
+        .catch((error) => console.log(error));
     }, []);
-
+    console.log(products);
     return (
         <div className="content">
             <ul className="products">
