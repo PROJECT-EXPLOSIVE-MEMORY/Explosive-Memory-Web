@@ -19,7 +19,7 @@ function Products() {
     = useState(emptyProducts);
 
     useEffect(()=> {
-        axios.get<Product[]>("http://localhost:5224/catalog",
+        axios.get<Product[]>("https://explosive-memory-api.azurewebsites.net/catalog/",
         {
             headers: {
                 "Content-Type":"application/json",
